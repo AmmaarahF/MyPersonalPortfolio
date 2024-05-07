@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Custom';
+    src: url(fonts/Camellia.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#F2EDE9 ;
+    background-size: cover;
+}
+.icon{
+    font-family: 'Custom';
+    font-weight: bold;
+}
+.icon a{
+    text-decoration: none;
+    font-family: 'Custom';
+}
+nav{
+    background-color: #B4A49D;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: center;
+  
+}
+nav .icon a{
+    display: flex;
+    flex-wrap:nowrap;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Custom';
+}
+nav .links {
+    display: flex;
+    gap: 2rem;
+}
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #F2EDE9;
+    margin-right: 20px;
+    font-family: 'Custom';
+}
+nav ul li::after{
+    content: '';
+    height: 3px; 
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    margin-bottom: 2px;
+}
+nav li:first-child{
+    margin-right: auto;
+    padding-left: 5px;
+}
+p{
+    font-family: 'Custom';
+    color: black;
+}
