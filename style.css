@@ -5,6 +5,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     min-height: 100vh;
@@ -69,7 +70,65 @@ nav li:first-child{
     margin-right: auto;
     padding-left: 5px;
 }
-p{
-    font-family: 'Custom';
-    color: black;
+.me_pic{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
 }
+.container .me_pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+section{
+    height: 100vh;
+}
+.two{
+    background-color: #ece1db;
+}
+.sec{
+    position: relative;
+    right: 0;
+   
+}
+.name{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.ed_name{
+    font-family: 'Designer';
+    font-size: 2rem;
+    color: #273248;
+}
+.sub{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+.ed_sub{
+    font-family: 'Designer';
+    font-size: 2rem;
+    color: #273248;
+}
+.btns{
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    
+}
+.btn{
+    background-color: #b0b7cc;
+    color: #273248;
+    padding: 5px 10px;
+}
+.abt_btn{
+    background-color: #b0b7cc;
+    color: #273248;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+
