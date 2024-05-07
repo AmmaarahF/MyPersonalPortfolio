@@ -2,6 +2,10 @@
     font-family: 'Custom';
     src: url(fonts/Camellia.otf);
 }
+@font-face {
+    font-family: 'Custom2';
+    src: url(fonts/Voguella.ttf);
+}
 *{
     padding: 0;
     margin: 0;
@@ -13,6 +17,9 @@ body{
     background-repeat: no-repeat;
     background-color:#F2EDE9 ;
     background-size: cover;
+}
+html{
+    scroll-behavior: smooth;
 }
 .icon{
     font-family: 'Custom';
@@ -74,61 +81,254 @@ nav li:first-child{
     height: 350px;
     width: 350px;
     border-radius: 50%;
+    
+}
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
 }
 .container .me_pic{
     display: block;
     margin-left: auto;
-    margin-right: auto;
     margin-top: 150px;
 }
 section{
     height: 100vh;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
 }
-.two{
+.one{
+   
+}
+#two{
     background-color: #ece1db;
 }
 .sec{
-    position: relative;
-    right: 0;
-   
+    display:flex;
+    align-items: center;
 }
 .name{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Custom2';
     font-size: 1.2rem;
     font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    color:  #8f8581;
+}
+.left_name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: auto;
+    margin-top: 50px;
 }
 .ed_name{
-    font-family: 'Designer';
+    font-family: 'Custom2';
     font-size: 2rem;
-    color: #273248;
+    color:  #8f8581;
 }
 .sub{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Custom2';
     font-size: 1.2rem;
     font-weight: bold;
-
+    color:  #8f8581;
 }
 .ed_sub{
-    font-family: 'Designer';
+    font-family: 'Custom2';
     font-size: 2rem;
-    color: #273248;
+    color:  #8f8581;
 }
+
+/*Second Page*/
+
 .btns{
     display: flex;
-    position: relative;
-    margin-left: auto;
-    
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
 }
 .btn{
-    background-color: #b0b7cc;
-    color: #273248;
+    background-color: #ece1db;
+    color: #8f8581;
     padding: 5px 10px;
+    border: 2px solid #8f8581;
+}
+.btn:hover{
+    transform: scale(1.05);
 }
 .abt_btn{
-    background-color: #b0b7cc;
-    color: #273248;
+    background-color: #ece1db;
+    color: #8f8581;
     padding: 5px 10px;
     margin-left: 10px;
+    border: 2px solid #8f8581;
+    outline: none;
+}
+.abt_btn:hover{
+    transform: scale(1.05);
+}
+#two .two_p{
+    color:  #8f8581;
+    font-family: 'Custom2';
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    align-items: center;
+    padding-top: 80px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+h1{
+    color: #8f8581;
+    font-family: 'Custom2';
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+h4{
+    color: #8f8581;
+    font-family: 'Custom2';
+    font-weight: bold;
+}
+h3{
+    color: #8f8581;
+    font-family: 'Custom2';
+    font-weight: bold;
+    font-size: 17pt;
+
+}
+p{
+    color: #8f8581;
+    font-family: 'Custom2';
+    font-size: 15pt;
+    
+}
+.product figcaption {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* Centering content vertically */
+    flex-direction: column; /* Stacking content vertically */
+    height: 10%; /* Ensuring figcaption takes full height */
+    
+}
+.price {
+    font-size: 1.3rem;
+}
+.products-container{
+    display: flex;
+    justify-content: center; /* Center aligning the products horizontally */
+    flex-wrap: wrap;
+}
+.product{
+    padding: 20px;
+    padding-top: 50px;
+}
+figcaption{
+    color: #8f8581;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.product:hover{
+        transform: scale(1.05);
 }
 
+/*Third page*/
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+   
+}
+.edu{
+    padding-right: 50px;
+    padding-left: 15px;
+    border-left: 3px solid #8f8581;
+}
+.box{
+    padding: 15px;
+    border: 1px solid #8f8581;
+    background-color: #ece1db;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+.box:hover{
+    transform: scale(1.05);
+}
 
+/*Fourth page*/
+
+.form {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    background-color: #aa9e98;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+  }
+  
+  .form .title {
+    color: #e0d2cc;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  .form button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #8f8581;
+    color: #fff;
+    cursor: pointer;
+}
+#four{
+   
+}
+.title{
+    font-family: 'Custom2';
+    letter-spacing: 8px;
+}
+
+/*Fifth page*/
+
+#five{
+    background-color: #ece1db;
+}
+      
